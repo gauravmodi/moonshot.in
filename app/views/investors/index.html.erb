@@ -1,0 +1,12 @@
+<h1>All investors</h1>
+
+<ul>
+	<hr>
+	<% @investors.each do |investor| %>
+		<li>
+			<%= investor.name %><br>
+			<p><%= investor.description %></p>
+		</li>
+		<hr>
+	<% end %>
+</ul>
