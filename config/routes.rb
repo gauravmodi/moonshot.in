@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   resources :investors
+  root to: 'investors#index'
 
 end
 
