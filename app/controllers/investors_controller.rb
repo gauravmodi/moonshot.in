@@ -4,4 +4,8 @@ class InvestorsController < ApplicationController
     @investors = Investor.all
   end
   
+  def show
+    @investor = Investor.find(params[:id])
+  end
+
 end

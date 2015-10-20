@@ -4,7 +4,7 @@
 	<hr>
 	<% @investors.each do |investor| %>
 		<li>
-			<%= investor.name %><br>
+			<%= link_to investor.name, investor_path(investor) %><br>
 			<p><%= investor.description %></p>
 		</li>
 		<hr>
