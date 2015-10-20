@@ -5,7 +5,7 @@ class InvestorsController < ApplicationController
   end
   
   def show
-    @investor = Investor.find(params[:id])
+    @investor = Investor.friendly.find(params[:id])
   end
 
 end
