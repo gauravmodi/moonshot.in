@@ -11,13 +11,16 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20151016151822) do
+ActiveRecord::Schema.define(version: 20151024100359) do
 
   create_table "investors", force: :cascade do |t|
     t.string   "name"
     t.text     "description"
     t.datetime "created_at",  null: false
     t.datetime "updated_at",  null: false
+    t.string   "slug"
   end
+
+  add_index "investors", ["slug"], name: "index_investors_on_slug"
 
 end
