@@ -1,11 +1,5 @@
 <h1>All investors</h1>
 
-<%= form_tag investors_path, :method => :get do %>
-  <p>
-    <%= text_field_tag :search, params[:search] %>
-    <%= submit_tag "Search", :name => nil %>
-<% end %>
-
 <ul>
 	<hr>
 	<% @investors.each do |investor| %>

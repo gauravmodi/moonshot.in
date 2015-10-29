@@ -1,13 +1,7 @@
 class InvestorsController < ApplicationController
 
   def index
-    #@investors = Investor.all
-
-    @search = Investor.search do 
-      fulltext params[:search]
-    end
-    @investors = @search.results
-
+    @investors = Investor.all
   end
   
   def show
